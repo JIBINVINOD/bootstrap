@@ -1,0 +1,22 @@
+.first{
+    background-color: black;
+    color: azure;
+    height: 100%;
+    width:  100%;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    
+
+
+    
+}
+.second{
+    background-color: black;
+}
+.third{
+    height: 100%;
+    width:  100%;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    
+}
