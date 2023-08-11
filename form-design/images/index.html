@@ -15,26 +15,93 @@
         .first{
             background-color: white;
             border: 2px solid white;
-            padding-bottom: 10%;
+            max-width: 1114px;
+            padding-top: 130px;
+            padding-right: 210px;
+            padding-bottom: 130px;
+            padding-left: 210px;
+            position: relative;
         }
-        .btn{
-            align-content: center;
+
+        input, 
+        input::placeholder {
+            font: 1.25rem/3 sans-serif;
         }
+        label,
+        form-label {
+            font-size: 15px;
+        }
+
+        .head{
+            font-family: fantasy;
+            margin-bottom: 50px;
+        }
+
+        .btn-grad {
+            background-image: linear-gradient(to right, #10eb23 0%, #0ea0ee  51%, #16A085  100%);
+            margin-left: 250px;
+            padding-top: 0%;
+            padding-bottom: 0%;
+            padding-right: 20px;
+            padding-left: 20px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border: 10px;
+            justify-content: center;
+            align-items: center;
+            min-width: 150px;
+            height: 62px;
+            display: flex;
+            line-height: 1.2;
+          }
+
+          .btn-grad:hover {
+            background-position: right center;
+            color: #fff;
+            text-decoration: none;
+          }
+          .form-control{
+            display: block;
+            width: 100%;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            line-height: 1.2;
+            font-size: 20px;
+            margin-top: 10px;
+            padding-top: 39px;
+            padding-right: 40px;
+            padding-left: 40px;
+            
+          }
+        
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="row">
-            <div class="first col-lg mt-5"> <h1 class="head">GET IN TOUCH</h1>
-                <div class="mb-5">
-                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        <div class="row justify-content-center mt-5">
+            <div class="first col-lg"> <h1 class="head">GET IN TOUCH</h1>
+                <div class="row">
+                    <div class="col">
+                        <label for="exampleFormControlInput1" class="form-label">Tell us your name *</label>
+                      <input type="text" class="form-control" placeholder="Enter your name" aria-label="Enter yor name">
+                    </div>
+                    <div class="col">
+                        <label for="exampleFormControlInput1" class="form-label">Enter your email *</label>
+                      <input type="text" class="form-control" placeholder="Enter your email " aria-label="Enter your email">
+                    </div>
+                  </div>
+                  <div class="mb-3 mt-2">
+                    <label for="exampleFormControlInput1" class="form-label">Your Website</label>
+                    <input type="website" class="form-control" id="exampleFormControlInput1" placeholder="https://">
                   </div>
                   <div class="mb-5">
                     <label for="exampleFormControlTextarea1" class="form-label">MESSAGE</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <textarea class="f form-control" id="exampleFormControlTextarea1" rows="7"></textarea>
                   </div>
-                  <button type="button" class="btn btn-outline-success ">SUBMIT</button>
+                  <button class="btn-grad">submit</button>
             </div>
         </div>
     </div>
